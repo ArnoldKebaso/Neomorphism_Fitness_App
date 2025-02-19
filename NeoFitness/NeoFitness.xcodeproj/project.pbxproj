@@ -11,6 +11,13 @@
 		4BA54CE52D66092700EC8A50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA54CE42D66092700EC8A50 /* ContentView.swift */; };
 		4BA54CE72D66092A00EC8A50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA54CE62D66092A00EC8A50 /* Assets.xcassets */; };
 		4BA54CEA2D66092A00EC8A50 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BA54CE92D66092A00EC8A50 /* Preview Assets.xcassets */; };
+		4BA54CFA2D660C1900EC8A50 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA54CF92D660C1900EC8A50 /* Workout.swift */; };
+		4BA54CFC2D660C3100EC8A50 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA54CFB2D660C3000EC8A50 /* Activity.swift */; };
+		4BA54CFF2D660C6600EC8A50 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA54CFE2D660C6600EC8A50 /* DashboardViewModel.swift */; };
+		4BA54D012D660C7F00EC8A50 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA54D002D660C7F00EC8A50 /* WorkoutViewModel.swift */; };
+		4BA54D042D660CA100EC8A50 /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA54D032D660CA100EC8A50 /* HealthKitService.swift */; };
+		4BA54D062D660CBC00EC8A50 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA54D052D660CBC00EC8A50 /* NotificationService.swift */; };
+		4BA54D0A2D660CF100EC8A50 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA54D092D660CF100EC8A50 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		4BA54CE42D66092700EC8A50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4BA54CE62D66092A00EC8A50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BA54CE92D66092A00EC8A50 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4BA54CF92D660C1900EC8A50 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		4BA54CFB2D660C3000EC8A50 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		4BA54CFE2D660C6600EC8A50 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		4BA54D002D660C7F00EC8A50 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
+		4BA54D032D660CA100EC8A50 /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
+		4BA54D052D660CBC00EC8A50 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		4BA54D092D660CF100EC8A50 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,13 @@
 		4BA54CE12D66092700EC8A50 /* NeoFitness */ = {
 			isa = PBXGroup;
 			children = (
+				4BA54D072D660CCE00EC8A50 /* Utilities */,
+				4BA54D022D660C9000EC8A50 /* Services */,
+				4BA54CFD2D660C4D00EC8A50 /* ViewModels */,
+				4BA54CF82D660BF600EC8A50 /* Models */,
+				4BA54CF52D660BAB00EC8A50 /* Components */,
+				4BA54CF12D660B4200EC8A50 /* Scenes */,
+				4BA54CF02D660A7600EC8A50 /* App */,
 				4BA54CE22D66092700EC8A50 /* NeoFitnessApp.swift */,
 				4BA54CE42D66092700EC8A50 /* ContentView.swift */,
 				4BA54CE62D66092A00EC8A50 /* Assets.xcassets */,
@@ -65,6 +86,110 @@
 				4BA54CE92D66092A00EC8A50 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4BA54CF02D660A7600EC8A50 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4BA54CF12D660B4200EC8A50 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4BA54CF42D660B9C00EC8A50 /* Workout */,
+				4BA54CF32D660B9100EC8A50 /* Dashboard */,
+				4BA54CF22D660B7C00EC8A50 /* Onboarding */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4BA54CF22D660B7C00EC8A50 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		4BA54CF32D660B9100EC8A50 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4BA54CF42D660B9C00EC8A50 /* Workout */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Workout;
+			sourceTree = "<group>";
+		};
+		4BA54CF52D660BAB00EC8A50 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				4BA54CF72D660BDE00EC8A50 /* ActivityRing */,
+				4BA54CF62D660BC400EC8A50 /* NeumorphicButton */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4BA54CF62D660BC400EC8A50 /* NeumorphicButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NeumorphicButton;
+			sourceTree = "<group>";
+		};
+		4BA54CF72D660BDE00EC8A50 /* ActivityRing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ActivityRing;
+			sourceTree = "<group>";
+		};
+		4BA54CF82D660BF600EC8A50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4BA54CF92D660C1900EC8A50 /* Workout.swift */,
+				4BA54CFB2D660C3000EC8A50 /* Activity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4BA54CFD2D660C4D00EC8A50 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4BA54CFE2D660C6600EC8A50 /* DashboardViewModel.swift */,
+				4BA54D002D660C7F00EC8A50 /* WorkoutViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4BA54D022D660C9000EC8A50 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4BA54D032D660CA100EC8A50 /* HealthKitService.swift */,
+				4BA54D052D660CBC00EC8A50 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4BA54D072D660CCE00EC8A50 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4BA54D082D660CDA00EC8A50 /* Extensions */,
+				4BA54D092D660CF100EC8A50 /* Theme.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4BA54D082D660CDA00EC8A50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +262,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA54D0A2D660CF100EC8A50 /* Theme.swift in Sources */,
 				4BA54CE52D66092700EC8A50 /* ContentView.swift in Sources */,
+				4BA54CFF2D660C6600EC8A50 /* DashboardViewModel.swift in Sources */,
 				4BA54CE32D66092700EC8A50 /* NeoFitnessApp.swift in Sources */,
+				4BA54CFC2D660C3100EC8A50 /* Activity.swift in Sources */,
+				4BA54D062D660CBC00EC8A50 /* NotificationService.swift in Sources */,
+				4BA54D042D660CA100EC8A50 /* HealthKitService.swift in Sources */,
+				4BA54D012D660C7F00EC8A50 /* WorkoutViewModel.swift in Sources */,
+				4BA54CFA2D660C1900EC8A50 /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
